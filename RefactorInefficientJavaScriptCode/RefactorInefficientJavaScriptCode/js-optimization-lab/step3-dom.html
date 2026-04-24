@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Optimization</title>
+</head>
+<body>
+
+<ul id="list"></ul>
+
+<script>
+  const list = document.getElementById("list");
+
+  let items = "";
+
+  for (let i = 0; i < 100; i++) {
+    items += `<li>Item ${i}</li>`;
+  }
+
+  list.innerHTML = items;
+</script>
+
+</body>
+</html>
